@@ -73,25 +73,18 @@ WSGI_APPLICATION = 'drameIdani.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-if DEBUG:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'debug.sqlite3'),
-        }
-    }
-else:
-    DATABASES = {
-      'default': {
-        'ENGINE': os.environ.get('db_engine', 'django.db.backends.postgresql'),
-        'NAME': os.environ.get('PGDATABASE'),
-        'USER': os.environ.get('PGUSER'),
-        'PASSWORD': os.environ.get('PGPASSWORD'),
-        'HOST': os.environ.get('PGHOST'),
-        'PORT': os.environ.get('db_port', '5432'),
-        'OPTIONS': {'sslmode': 'require'},
-      }
-    }
+
+DATABASES = {
+  'default': {
+    'ENGINE': os.environ.get('db_engine', 'django.db.backends.postgresql'),
+    'NAME': os.environ.get('PGDATABASE'),
+    'USER': os.environ.get('PGUSER'),
+    'PASSWORD': os.environ.get('PGPASSWORD'),
+    'HOST': os.environ.get('PGHOST'),
+    'PORT': os.environ.get('db_port', '5432'),
+    'OPTIONS': {'sslmode': 'require'},
+  }
+}
 
 
 # Password validation
