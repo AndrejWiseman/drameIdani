@@ -73,8 +73,6 @@ WSGI_APPLICATION = 'drameIdani.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-
-
 if DEBUG:
     DATABASES = {
         'default': {
@@ -82,7 +80,6 @@ if DEBUG:
             'NAME': os.path.join(BASE_DIR, 'debug.sqlite3'),
         }
     }
-
 else:
     DATABASES = {
       'default': {
@@ -95,13 +92,6 @@ else:
         'OPTIONS': {'sslmode': 'require'},
       }
     }
-
-
-
-
-
-
-
 
 
 # Password validation
@@ -126,9 +116,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'sr-YU'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Belgrade'
 
 USE_I18N = True
 
