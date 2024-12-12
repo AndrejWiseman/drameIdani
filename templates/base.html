@@ -10,7 +10,7 @@
         <meta property="og:url" content="https://drame-i-kamenovi.vercel.app/"/>
         <meta property="og:description" content="Na brz i jednostavan nacin izracunajte vodenicarske mere"/>
         <meta property="og:image" content="{% static 'images/mlin2.svg' %}"/>
-    
+
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script defer src="{% static 'js/main.js' %}"></script>
@@ -18,6 +18,16 @@
         {% block css %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{% static 'images/mlin2.svg' %}">
         <title>Drame i Kamenovi</title>
+    
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XPTM98EYW1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-XPTM98EYW1');
+        </script>
     </head>
     <body class="h-dvh flex justify-between flex-col">
         <div class="container h-dvh mx-auto ">
