@@ -1,0 +1,59 @@
+
+
+<div class="polja flex justify-around gap-3 pb-8 px-3">
+
+    <div class="polje1  w-6/12 ">
+        <div class="p11  ">
+            <label class="form-control  ">
+              <div class="label">
+                <span class="label-text">Iz</span>
+              </div>
+              <input type="number" id="amount-one" placeholder="0"  value="" class="input input-bordered [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
+            </label>
+        </div>
+
+        <div class="p12">
+            <label class="form-control  ">
+              <div class="label">
+                <span class="label-text">Jedinica</span>
+              </div>
+              <select id="currency-one" class="select select-bordered">
+                <option value="vodenica" selected>Vodenica</option>
+                <option value="vlasnik" >Vlasnik</option>
+                <option value="kamen" >Kamen</option>
+                <option value="litra">Litra</option>
+                <option value="drami">Drami</option>
+{#                <option value="sati">Sati</option>#}
+              </select>
+            </label>
+        </div>
+    </div>
+
+
+    <div class="polje2 w-6/12 ">
+        <div class="p21">
+            <label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="label-text">U</span>
+              </div>
+              <input type="number" class="input input-bordered [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" id="amount-two" placeholder="0" value="" />
+            </label>
+        </div>
+
+        <div class="p22">
+            <label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="label-text">Jedinica</span>
+              </div>
+              <select id="currency-two" class="select select-bordered">
+                <option value="vodenica" >Vodenica</option>
+                <option value="vlasnik">Vlasnik</option>
+                <option value="kamen" selected>Kamen</option>
+                <option value="litra">Litra</option>
+                <option value="drami">Drami</option>
+{#                <option value="sati">Sati</option>#}
+              </select>
+            </label>
+        </div>
+    </div>
+</div>

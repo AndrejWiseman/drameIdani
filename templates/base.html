@@ -1,19 +1,37 @@
 <!doctype html>
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Drame i Dani</title>
-    <link rel="stylesheet" href="{% static 'css/global.css' %}">
-</head>
-<body>
+<html lang="en" data-theme="business">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="HTML tags are crucial for SEO more than ever before. In this post, I’m sharing the top 10 HTML meta tags you need to know."/>
+        <meta property="og:url" content="https://www.example.com/"/>
+        <meta property="og:description" content="Best-in-industry guides and information while cultivating a positive community."/>
+        <meta property="og:image" content="https://www.example.com/sample.jpg"/>
+    
+    
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script defer src="{% static 'js/main.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'css/global.css' %}">
+        {% block css %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{% static 'images/mlin2.svg' %}">
+        <title>Drame i Litre</title>
+    </head>
+    <body class="h-dvh flex justify-between flex-col">
+        <div class="container h-dvh mx-auto ">
+            {% block content %}
+                
+            {% endblock %}
+        </div>
+        
+        {% include 'footer.html' %}
 
-    {% block content %}
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
 
-    {% endblock %}
-
-</body>
+    </body>
 </html>
